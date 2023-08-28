@@ -1,4 +1,5 @@
 import logging
+import keys
 
 from pathlib import Path
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext, CallbackQueryHandler
@@ -6,7 +7,7 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, Callb
 logger = logging.getLogger(__name__)
 
 def main() -> None:
-    updater = Updater("6095229139:AAFo_XcjRNY3xZb2M-y8yQeK19BdmFvtkIA")
+    updater = Updater(keys.token)
     dispatcher = updater.dispatcher
     
     for extt in Path("ext/").glob("*.py"):
