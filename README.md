@@ -10,4 +10,4 @@ ChatGPT AI with saving conversation data
 in keys.py file add ur bot token as token
 
 
-in vars/openai write ur OpenAI API key
+in var/openai write ur OpenAI API key
